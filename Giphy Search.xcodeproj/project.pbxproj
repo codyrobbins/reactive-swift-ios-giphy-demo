@@ -75,17 +75,41 @@
 		C30310891D0747A6003D85C3 /* Giphy Search */ = {
 			isa = PBXGroup;
 			children = (
+				C31EDFD41D19EFBD004305F7 /* Code */,
+				C31EDFD51D19EFD0004305F7 /* User Interface */,
+				C31EDFD61D19EFE5004305F7 /* Resources */,
+			);
+			path = "Giphy Search";
+			sourceTree = "<group>";
+		};
+		C31EDFD41D19EFBD004305F7 /* Code */ = {
+			isa = PBXGroup;
+			children = (
 				C303108A1D0747A6003D85C3 /* AppDelegate.swift */,
 				C303108C1D0747A6003D85C3 /* ViewController.swift */,
 				C30310BC1D075BEC003D85C3 /* Gif.swift */,
 				C30310BE1D0762A1003D85C3 /* GifCollectionViewCell.swift */,
 				C30310BA1D075AB8003D85C3 /* Giphy.swift */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		C31EDFD51D19EFD0004305F7 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
 				C303108E1D0747A6003D85C3 /* Main.storyboard */,
-				C30310911D0747A6003D85C3 /* Assets.xcassets */,
 				C30310931D0747A6003D85C3 /* LaunchScreen.storyboard */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		C31EDFD61D19EFE5004305F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C30310911D0747A6003D85C3 /* Assets.xcassets */,
 				C30310961D0747A6003D85C3 /* Info.plist */,
 			);
-			path = "Giphy Search";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		D6965AC464C3B6BC7163713F /* Pods */ = {
