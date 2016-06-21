@@ -12,9 +12,13 @@
 		C30310901D0747A6003D85C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C303108E1D0747A6003D85C3 /* Main.storyboard */; };
 		C30310921D0747A6003D85C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30310911D0747A6003D85C3 /* Assets.xcassets */; };
 		C30310951D0747A6003D85C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30310931D0747A6003D85C3 /* LaunchScreen.storyboard */; };
+		E1FD67541D9ECC704386A872 /* Pods_Giphy_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34883A5381E7DF8CED89D070 /* Pods_Giphy_Search.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34883A5381E7DF8CED89D070 /* Pods_Giphy_Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Giphy_Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D26BDCDF773ADE6B9C95AD /* Pods-Giphy Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giphy Search.release.xcconfig"; path = "Pods/Target Support Files/Pods-Giphy Search/Pods-Giphy Search.release.xcconfig"; sourceTree = "<group>"; };
+		60553D257C83E310F7C8A34A /* Pods-Giphy Search.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giphy Search.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Giphy Search/Pods-Giphy Search.debug.xcconfig"; sourceTree = "<group>"; };
 		C30310871D0747A6003D85C3 /* Giphy Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giphy Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C303108A1D0747A6003D85C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C303108C1D0747A6003D85C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1FD67541D9ECC704386A872 /* Pods_Giphy_Search.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DA0C9751E0C3E1E7C9015B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34883A5381E7DF8CED89D070 /* Pods_Giphy_Search.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C303107E1D0747A6003D85C3 = {
 			isa = PBXGroup;
 			children = (
 				C30310891D0747A6003D85C3 /* Giphy Search */,
 				C30310881D0747A6003D85C3 /* Products */,
+				D6965AC464C3B6BC7163713F /* Pods */,
+				2DA0C9751E0C3E1E7C9015B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "Giphy Search";
 			sourceTree = "<group>";
 		};
+		D6965AC464C3B6BC7163713F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60553D257C83E310F7C8A34A /* Pods-Giphy Search.debug.xcconfig */,
+				57D26BDCDF773ADE6B9C95AD /* Pods-Giphy Search.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C30310991D0747A6003D85C3 /* Build configuration list for PBXNativeTarget "Giphy Search" */;
 			buildPhases = (
+				B55C1F04E58E024876AD9D45 /* 📦 Check Pods Manifest.lock */,
 				C30310831D0747A6003D85C3 /* Sources */,
 				C30310841D0747A6003D85C3 /* Frameworks */,
 				C30310851D0747A6003D85C3 /* Resources */,
+				C4092C3C9FE091FCEDCE9EEC /* 📦 Embed Pods Frameworks */,
+				F9C396C6BD4F9442B45A0F17 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B55C1F04E58E024876AD9D45 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4092C3C9FE091FCEDCE9EEC /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Giphy Search/Pods-Giphy Search-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9C396C6BD4F9442B45A0F17 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Giphy Search/Pods-Giphy Search-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C30310831D0747A6003D85C3 /* Sources */ = {
@@ -250,6 +325,7 @@
 		};
 		C303109A1D0747A6003D85C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60553D257C83E310F7C8A34A /* Pods-Giphy Search.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Giphy Search/Info.plist";
@@ -261,6 +337,7 @@
 		};
 		C303109B1D0747A6003D85C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D26BDCDF773ADE6B9C95AD /* Pods-Giphy Search.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Giphy Search/Info.plist";
@@ -289,6 +366,7 @@
 				C303109B1D0747A6003D85C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

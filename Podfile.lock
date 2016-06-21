@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (3.4.0)
+  - ModelMapper (2.1.0)
+  - Moya (6.5.0):
+    - Moya/Core (= 6.5.0)
+  - Moya-ModelMapper/Core (2.0.1):
+    - ModelMapper (~> 2.0)
+    - Moya (~> 6.4)
+  - Moya-ModelMapper/RxSwift (2.0.1):
+    - Moya-ModelMapper/Core
+    - Moya/RxSwift (~> 6.4)
+    - RxSwift (~> 2.3)
+  - Moya/Core (6.5.0):
+    - Alamofire (~> 3.0)
+    - Result (~> 2.0)
+  - Moya/RxSwift (6.5.0):
+    - Moya/Core
+    - RxSwift (~> 2.0)
+  - Result (2.0.0)
+  - RxCocoa (2.5.0):
+    - RxSwift (~> 2.5)
+  - RxSwift (2.5.0)
+
+DEPENDENCIES:
+  - Moya-ModelMapper/RxSwift (~> 2.0.1)
+  - RxCocoa (~> 2.5.0)
+  - RxSwift (~> 2.5.0)
+
+SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  ModelMapper: e599744bc1e869bdb87b453b7ce16981028b8513
+  Moya: f7a4044719381cc6299f9ad3e0ef05f426f0557b
+  Moya-ModelMapper: 8956f8e834eea3cf776e79ddbf6680e0d53c5923
+  Result: 9e75e1111c774c6ac594e14907b15057053a7959
+  RxCocoa: e1b1562e57a554d0fb2aabf9d71b637f177257c7
+  RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae
+
+PODFILE CHECKSUM: 174856ff943cf769d0535045f2cfe58a8aeb87d6
+
+COCOAPODS: 1.0.0
