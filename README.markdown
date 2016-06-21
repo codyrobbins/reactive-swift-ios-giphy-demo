@@ -11,5 +11,5 @@ A simple iOS mashup app to search for gifs on Giphy written in Swift using [Reac
 
 1. Install [CocoaPods](https://cocoapods.org).
 2. Run CocoaPods via `pod install` in the project directory to install dependencies.
-3. Open the [workspace](tree/master/Giphy%20Search.xcworkspace) in Xcode.
+3. Open the workspace (not the project file) in Xcode.
 4. Build and run the project.
